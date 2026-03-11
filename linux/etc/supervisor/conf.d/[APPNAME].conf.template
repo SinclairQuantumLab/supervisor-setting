@@ -11,6 +11,8 @@ command=<EXEPATH>
 environment=PYTHONUNBUFFERED=1 ; let stdout logged in real time for python app
 user=<USERNAME>
 autostart=true
-autorestart=true
+startsecs=5
 stdout_logfile=/etc/supervisor/logs/<APPNAME>_out.log
 stderr_logfile=/etc/supervisor/logs/<APPNAME>_err.log
+
+; for the full set of setting parameters, refer to https://supervisord.org/configuration.html?highlight=autorestart#program-x-section-settings
